@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace CMP1903_A2_2324
 {
-    internal class SevensOutPlayerOne // Creating the class for the Sevens out game.
+    public class SevensOutPlayerOne // Creating the class for the Sevens out game.
     {
         public static int SevensPlayerOne() // Creating the player one method
         {
             Die die = new Die();
             int valueOnePlayerOne = die.DieRoll();
-            int valueTwoPlayerOne = die.DieRoll();
-            int totalPlayerOne = valueOnePlayerOne + valueTwoPlayerOne;
-            if (valueOnePlayerOne == valueTwoPlayerOne) { totalPlayerOne = (valueOnePlayerOne + valueTwoPlayerOne)*2; };
-            return totalPlayerOne;
+            int valueTwoPlayerOne = die.DieRoll(); // rolls the die to create the values
+            int totalPlayerOne = valueOnePlayerOne + valueTwoPlayerOne; // creates the total roll value
+            if (valueOnePlayerOne == valueTwoPlayerOne) { totalPlayerOne = (valueOnePlayerOne + valueTwoPlayerOne)*2; }; // checks for doubles and implements the x2 rule
+            return totalPlayerOne; // returns to integer
             
         }
 
     }
-    internal class SevensOutPlayerTwo
+    public class SevensOutPlayerTwo
     {
         public static int SevensPlayerTwo() // Player two method
         {
@@ -29,17 +29,8 @@ namespace CMP1903_A2_2324
             int valueTwoPlayerTwo = die.DieRoll();
             int totalPlayerTwo = valueOnePlayerTwo + valueTwoPlayerTwo;
             if (valueOnePlayerTwo == valueTwoPlayerTwo) { totalPlayerTwo = (valueOnePlayerTwo + valueTwoPlayerTwo) * 2; };
-            return totalPlayerTwo;
+            return totalPlayerTwo; // same code as other class but tweaked
         }
 
-    }
-    internal class SevensGameLoop
-    {
-        SevensOutPlayerOne SevensOne = new SevensOutPlayerOne();
-        SevensOutPlayerTwo SevensTwo = new SevensOutPlayerTwo();
-        public static void GameLoop(SevensOutPlayerTwo, SevensOutPlayerOne)
-        {
-
-        }
     }
 }
