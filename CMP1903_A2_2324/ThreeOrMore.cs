@@ -6,8 +6,5 @@ using System.Threading.Tasks;
 
 namespace CMP1903_A2_2324
 {
-    internal class ThreePlayerOne // creating class for player one, i plan on doing all of the looping within the game class
-    {
-
-    }
+    // I really can't figure out how to write and implement this game, my apologies.
 }

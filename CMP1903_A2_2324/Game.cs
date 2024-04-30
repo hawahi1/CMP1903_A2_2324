@@ -73,6 +73,7 @@ namespace CMP1903_A2_2324
                                 if (keepPlaying == "Y")
                                 {
                                     Console.WriteLine("Restarting. Enjoy!");
+                                    Winner = 0;
                                     startGame = "Y";
                                 }
                                 if (keepPlaying != "Y")
@@ -91,11 +92,13 @@ namespace CMP1903_A2_2324
                                 if (keepPlaying == "Y")
                                 {
                                     Console.WriteLine("Restarting. Enjoy!");
+                                    Winner = 0;
                                     startGame = "Y";
                                 }
                                 if (keepPlaying != "Y")
                                 {
                                     Console.WriteLine("See you next time!");
+                                    Winner = 0;
                                     startGame = "N";
                                     break;
 
@@ -110,6 +113,7 @@ namespace CMP1903_A2_2324
                                 if (keepPlaying == "Y")
                                 {
                                     Console.WriteLine("Restarting. Enjoy!");
+                                    Winner = 0;
                                     startGame = "Y";
                                 }
                                 if (keepPlaying != "Y")
@@ -127,6 +131,8 @@ namespace CMP1903_A2_2324
                         Console.WriteLine("Loading...");
                         Statistics.TimesPlayed++;
                         int Winner = 0;
+                        int playerOneRoll = 0;
+                        int playerTwoRoll = 0;
                         Console.WriteLine("Loading complete!");
                         Console.WriteLine("Start game? [Y/N]");
                         string startGame = Console.ReadLine();
@@ -134,8 +140,6 @@ namespace CMP1903_A2_2324
                         {
                             while (Winner == 0)
                             {
-                                int playerOneRoll = 0;
-                                int playerTwoRoll = 0;
                                 Console.WriteLine("Player One, press R to roll!");
                                 string playerOneInput = Console.ReadLine();
                                 if (playerOneInput == "R")
@@ -152,6 +156,11 @@ namespace CMP1903_A2_2324
                                 if (playerTwoInput == "R")
                                 {
                                     playerTwoRoll = SevensOutPlayerTwo.SevensPlayerTwo();
+                                }
+                                if (playerTwoInput != "R")
+                                {
+                                    Console.WriteLine("Wrong input!");
+                                    Winner = 0;
                                 }
 
                                 if (playerOneRoll != 7 && playerTwoRoll != 7)
@@ -189,6 +198,7 @@ namespace CMP1903_A2_2324
                                 if (keepPlaying == "Y")
                                 {
                                     Console.WriteLine("Restarting. Enjoy!");
+                                    Winner = 0;
                                     startGame = "Y";
                                 }
                                 if (keepPlaying != "Y")
@@ -207,6 +217,7 @@ namespace CMP1903_A2_2324
                                 if (keepPlaying == "Y")
                                 {
                                     Console.WriteLine("Restarting. Enjoy!");
+                                    Winner = 0;
                                     startGame = "Y";
                                 }
                                 if (keepPlaying != "Y")
@@ -226,6 +237,7 @@ namespace CMP1903_A2_2324
                                 if (keepPlaying == "Y")
                                 {
                                     Console.WriteLine("Restarting. Enjoy!");
+                                    Winner = 0;
                                     startGame = "Y";
                                 }
                                 if (keepPlaying != "Y")

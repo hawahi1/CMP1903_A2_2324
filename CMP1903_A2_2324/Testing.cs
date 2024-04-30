@@ -13,6 +13,7 @@ namespace CMP1903_A2_2324
         public static void Test()
         {
             Console.WriteLine("The testing mode will let you know if any errors occur while the game play out.");
+            Console.WriteLine("The testing mode tests the version of the game against the computer, as the gamemodes use the same base mechanics.");
             Console.WriteLine("Start game? [Y/N]");
             string startGame = Console.ReadLine();
             int Winner = 0;
@@ -60,6 +61,7 @@ namespace CMP1903_A2_2324
                         if (keepPlaying == "Y")
                         {
                             Console.WriteLine("Restarting. Enjoy!");
+                            Winner = 0;
                             startGame = "Y";
                         }
                         if (keepPlaying != "Y")
@@ -78,6 +80,7 @@ namespace CMP1903_A2_2324
                         if (keepPlaying == "Y")
                         {
                             Console.WriteLine("Restarting. Enjoy!");
+                            Winner = 0;
                             startGame = "Y";
                         }
                         if (keepPlaying != "Y")
@@ -97,6 +100,7 @@ namespace CMP1903_A2_2324
                         if (keepPlaying == "Y")
                         {
                             Console.WriteLine("Restarting. Enjoy!");
+                            Winner = 0;
                             startGame = "Y";
                         }
                         if (keepPlaying != "Y")
