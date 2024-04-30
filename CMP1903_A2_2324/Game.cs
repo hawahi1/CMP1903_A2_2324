@@ -141,7 +141,6 @@ namespace CMP1903_A2_2324
                                 if (playerOneInput == "R")
                                 {
                                     playerOneRoll = SevensOutPlayerOne.SevensPlayerOne();
-                                    Console.WriteLine("Player One rolled..." + playerOneRoll);
                                 }
                                 if (playerOneInput != "R")
                                 {
@@ -153,7 +152,6 @@ namespace CMP1903_A2_2324
                                 if (playerTwoInput == "R")
                                 {
                                     playerTwoRoll = SevensOutPlayerTwo.SevensPlayerTwo();
-                                    Console.WriteLine("Player Two rolled..." + playerTwoRoll);
                                 }
 
                                 if (playerOneRoll != 7 && playerTwoRoll != 7)
@@ -266,7 +264,23 @@ namespace CMP1903_A2_2324
                 }
                 if(PlayerResponse == "4") 
                 {
+                    Testing tester = new Testing();
+                    Testing.Test();
+                    Console.WriteLine("Return to menu? [Y/N]");
+                    string returnMenu = Console.ReadLine();
+                    if (returnMenu == "Y")
+                    {
+                        gameOn = 1;
+                    }
+                    if (returnMenu!= "Y")
+                    {
+                        break;
+                    }
 
+                }
+                if(PlayerResponse == "5")
+                {
+                    break;
                 }
             }
         }
