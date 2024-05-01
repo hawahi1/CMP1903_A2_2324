@@ -58,6 +58,7 @@ namespace CMP1903_A2_2324
                     }
                     if (Winner == 1)
                     {
+                        Debug.Assert(playerOneRoll == 7 && playerTwoRoll != 7, "Rolling stopped eroniously");
                         Winner = 0;
                         Console.WriteLine("Player One Wins!");
                         Console.WriteLine("Keep playing? [Y/N]");
@@ -78,6 +79,7 @@ namespace CMP1903_A2_2324
                     }
                     if (Winner == 2)
                     {
+                        Debug.Assert(playerOneRoll != 7 && playerTwoRoll == 7, "Rolling stopped eroniously");
                         Console.WriteLine("Computer Wins!");
                         Console.WriteLine("Keep playing? [Y/N]");
                         string keepPlaying = Console.ReadLine();
@@ -97,6 +99,7 @@ namespace CMP1903_A2_2324
                     }
                     if (Winner == 3)
                     {
+                        Debug.Assert(playerOneRoll == 7 && playerTwoRoll == 7, "Rolling stopped eroniously");
                         Winner = 0;
                         Console.WriteLine("Draw!");
                         Console.WriteLine("Keep playing? [Y/N]");

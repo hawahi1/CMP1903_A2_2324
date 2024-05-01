@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CMP1903_A2_2324.exe" size="12224">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CMP1903_A2_2324.exe" size="10688">
       <assemblyIdentity name="CMP1903_A2_2324" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>eKpRj/WWiPX3rtzhHnCR3UPRvMOzzrJ4wp4N5EmXrGA=</dsig:DigestValue>
+        <dsig:DigestValue>zOyf6MxDptUCBn7w0cTLHMvUt6UJj//CMSLxjUJRuEY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

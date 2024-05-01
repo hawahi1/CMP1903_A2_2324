@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\alext\\Documents\\GitHub\\CMP1903_A2_2324\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|C:\\Users\\alext\\Documents\\GitHub\\CMP1903_A2_2324\\cmp1903_a2_2324\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|c:\\users\\alext\\documents\\github\\cmp1903_a2_2324\\cmp1903_a2_2324\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|solutionrelative:cmp1903_a2_2324\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|c:\\users\\alext\\documents\\github\\cmp1903_a2_2324\\cmp1903_a2_2324\\sevensout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|solutionrelative:cmp1903_a2_2324\\sevensout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|C:\\Users\\alext\\Documents\\GitHub\\CMP1903_A2_2324\\CMP1903_A2_2324\\Testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|solutionrelative:CMP1903_A2_2324\\Testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|C:\\Users\\alext\\Documents\\GitHub\\CMP1903_A2_2324\\CMP1903_A2_2324\\Die.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|solutionrelative:CMP1903_A2_2324\\Die.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|C:\\Users\\alext\\Documents\\GitHub\\CMP1903_A2_2324\\cmp1903_a2_2324\\sevensout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|solutionrelative:cmp1903_a2_2324\\sevensout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|C:\\Users\\alext\\Documents\\GitHub\\CMP1903_A2_2324\\cmp1903_a2_2324\\threeormore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|C:\\Users\\alext\\Documents\\GitHub\\CMP1903_A2_2324\\cmp1903_a2_2324\\statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|solutionrelative:cmp1903_a2_2324\\statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|C:\\Users\\alext\\Documents\\GitHub\\CMP1903_A2_2324\\CMP1903_A2_2324\\Testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C996029-BD25-42AD-9C3C-C50191C641AC}|CMP1903_A2_2324\\CMP1903_A2_2324.csproj|solutionrelative:CMP1903_A2_2324\\Testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "CMP1903_A2_2324\\Game.cs",
               "ToolTip": "C:\\Users\\alext\\Documents\\GitHub\\CMP1903_A2_2324\\CMP1903_A2_2324\\Game.cs",
               "RelativeToolTip": "CMP1903_A2_2324\\Game.cs",
-              "ViewState": "AQIAANAAAAAAAAAAAAAQwOAAAABgAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAOAAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-28T16:23:42.766Z",
               "IsPinned": true,
@@ -66,20 +66,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Testing.cs",
               "DocumentMoniker": "C:\\Users\\alext\\Documents\\GitHub\\CMP1903_A2_2324\\CMP1903_A2_2324\\Testing.cs",
               "RelativeDocumentMoniker": "CMP1903_A2_2324\\Testing.cs",
               "ToolTip": "C:\\Users\\alext\\Documents\\GitHub\\CMP1903_A2_2324\\CMP1903_A2_2324\\Testing.cs",
               "RelativeToolTip": "CMP1903_A2_2324\\Testing.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAC0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-28T16:23:43.985Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ThreeOrMore.cs",
               "DocumentMoniker": "C:\\Users\\alext\\Documents\\GitHub\\CMP1903_A2_2324\\CMP1903_A2_2324\\ThreeOrMore.cs",
               "RelativeDocumentMoniker": "CMP1903_A2_2324\\ThreeOrMore.cs",
@@ -91,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Statistics.cs",
               "DocumentMoniker": "C:\\Users\\alext\\Documents\\GitHub\\CMP1903_A2_2324\\CMP1903_A2_2324\\Statistics.cs",
               "RelativeDocumentMoniker": "CMP1903_A2_2324\\Statistics.cs",
@@ -103,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SevensOut.cs",
               "DocumentMoniker": "C:\\Users\\alext\\Documents\\GitHub\\CMP1903_A2_2324\\CMP1903_A2_2324\\SevensOut.cs",
               "RelativeDocumentMoniker": "CMP1903_A2_2324\\SevensOut.cs",
@@ -111,8 +112,7 @@
               "RelativeToolTip": "CMP1903_A2_2324\\SevensOut.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T16:23:35.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T16:23:35.756Z"
             }
           ]
         }
