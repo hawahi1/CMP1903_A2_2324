@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CMP1903_A2_2324
 {
-    internal class Die
+    public class Die
     {
         // Property
         public int DieValue //store the die value

@@ -49,6 +49,7 @@ namespace CMP1903_A2_2324
                                 if (playerOneRoll == 7 && playerTwoRoll != 7)
                                 {
                                     Console.WriteLine("Player One rolled..." + playerOneRoll);
+                                    Console.WriteLine("Computer rolled..." + playerTwoRoll);
                                     Console.WriteLine("Player One Score is: " + playerOneScore);
                                     Console.WriteLine("Computer Score is: " + playerTwoScore);
                                     Statistics.PlayerOneWins++;
@@ -64,6 +65,7 @@ namespace CMP1903_A2_2324
                                 }
                                 if (playerOneRoll != 7 && playerTwoRoll == 7)
                                 {
+                                    Console.WriteLine("Player One rolled..." + playerOneRoll);
                                     Console.WriteLine("Computer rolled..." + playerTwoRoll);
                                     Console.WriteLine("Player One Score is: " + playerOneScore);
                                     Console.WriteLine("Computer Score is: " + playerTwoScore);
@@ -204,6 +206,7 @@ namespace CMP1903_A2_2324
                                 if (playerOneRoll == 7 && playerTwoRoll != 7)
                                 {
                                     Console.WriteLine("Player One rolled..." + playerOneRoll);
+                                    Console.WriteLine("Player Two rolled..." + playerTwoRoll);
                                     Console.WriteLine("Player One Score is: " + playerOneScore);
                                     Console.WriteLine("Player Two Score is: " + playerTwoScore);
                                     if (playerOneScore > playerTwoScore)
@@ -217,6 +220,7 @@ namespace CMP1903_A2_2324
                                 }
                                 if (playerOneRoll != 7 && playerTwoRoll == 7)
                                 {
+                                    Console.WriteLine("Player One rolled..." + playerOneRoll);
                                     Console.WriteLine("Player Two rolled..." + playerTwoRoll);
                                     Console.WriteLine("Player One Score is: " + playerOneScore);
                                     Console.WriteLine("Player Two Score is: " + playerTwoScore);
