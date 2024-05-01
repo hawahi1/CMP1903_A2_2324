@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CMP1903_A2_2324
 {
-    public class SevensOutPlayerOne : Die // Creating the class for the Sevens out game.
+    public class SevensOutPlayerOne // Creating the class for the Sevens out game.
     {
         public static int SevensPlayerOne() // Creating the player one method
         {

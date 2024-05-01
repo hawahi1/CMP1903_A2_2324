@@ -52,7 +52,6 @@ namespace CMP1903_A2_2324
                                     Console.WriteLine("Computer rolled..." + playerTwoRoll);
                                     Console.WriteLine("Player One Score is: " + playerOneScore);
                                     Console.WriteLine("Computer Score is: " + playerTwoScore);
-                                    Statistics.PlayerOneWins++;
                                     if (playerOneScore > playerTwoScore)
                                     {
                                         Winner = 1;
@@ -69,7 +68,6 @@ namespace CMP1903_A2_2324
                                     Console.WriteLine("Computer rolled..." + playerTwoRoll);
                                     Console.WriteLine("Player One Score is: " + playerOneScore);
                                     Console.WriteLine("Computer Score is: " + playerTwoScore);
-                                    Statistics.ComputerWins++;
                                     if (playerOneScore > playerTwoScore)
                                     {
                                         Winner = 1;
@@ -91,7 +89,7 @@ namespace CMP1903_A2_2324
                             }
                             if (Winner == 1)                                            // Using an integer value to determine the winner and if statements to display the correct messages. 
                             {
-                                Winner = 0;
+                                Statistics.PlayerOneWins++;
                                 Console.WriteLine("Player One Wins!");
                                 Console.WriteLine("Keep playing? [Y/N]");
                                 string keepPlaying = Console.ReadLine();
@@ -113,6 +111,7 @@ namespace CMP1903_A2_2324
                             }
                             if (Winner == 2)
                             {
+                                Statistics.ComputerWins++;
                                 Console.WriteLine("Computer Wins!");
                                 Console.WriteLine("Keep playing? [Y/N]");
                                 string keepPlaying = Console.ReadLine();
@@ -135,7 +134,7 @@ namespace CMP1903_A2_2324
                             }
                             if (Winner == 3)
                             {
-                                Winner = 0;
+                                Statistics.Draws++;
                                 Console.WriteLine("Draw!");
                                 Console.WriteLine("Keep playing? [Y/N]");
                                 string keepPlaying = Console.ReadLine();
