@@ -12,6 +12,10 @@ namespace CMP1903_A2_2324
     {
         public static void Test()
         {
+
+            // The testing class is the same as the main game against the computer, however, it uses debug.assert() to verify values.
+            // The testing class is running a slightly outdated version of the game, however it serves its purpose in verifying that values are stored correctly regardless of that.
+
             Console.WriteLine("The testing mode will let you know if any errors occur while the game play out.");
             Console.WriteLine("The testing mode tests the version of the game against the computer, as the gamemodes use the same base mechanics.");
             Console.WriteLine("Start game? [Y/N]");

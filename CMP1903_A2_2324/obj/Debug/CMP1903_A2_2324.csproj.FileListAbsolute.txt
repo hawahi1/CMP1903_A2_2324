@@ -4,3 +4,7 @@ C:\Users\alext\Documents\GitHub\CMP1903_A2_2324\CMP1903_A2_2324\bin\Debug\CMP190
 C:\Users\alext\Documents\GitHub\CMP1903_A2_2324\CMP1903_A2_2324\bin\Debug\CMP1903_A2_2324.pdb
 C:\Users\alext\Documents\GitHub\CMP1903_A2_2324\CMP1903_A2_2324\obj\Debug\CMP1903_A2_2324.exe
 C:\Users\alext\Documents\GitHub\CMP1903_A2_2324\CMP1903_A2_2324\obj\Debug\CMP1903_A2_2324.pdb
+C:\Users\alext\Documents\GitHub\CMP1903_A2_2324\CMP1903_A2_2324\bin\Debug\CMP1903_A2_2324.exe.manifest
+C:\Users\alext\Documents\GitHub\CMP1903_A2_2324\CMP1903_A2_2324\bin\Debug\CMP1903_A2_2324.application
+C:\Users\alext\Documents\GitHub\CMP1903_A2_2324\CMP1903_A2_2324\obj\Debug\CMP1903_A2_2324.exe.manifest
+C:\Users\alext\Documents\GitHub\CMP1903_A2_2324\CMP1903_A2_2324\obj\Debug\CMP1903_A2_2324.application

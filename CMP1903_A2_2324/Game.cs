@@ -13,7 +13,7 @@ namespace CMP1903_A2_2324
         public static void Main(string[] args)
         {
             int gameOn = 1;
-            while (gameOn > 0)
+            while (gameOn > 0)                                              // Creating while loop so that user is able to go back to the menu
             {
                 Console.WriteLine("Welcome to the Sebastian's cool games!");
                 Console.WriteLine("Prompts are CAPS SENSITIVE!");
@@ -29,31 +29,54 @@ namespace CMP1903_A2_2324
                         Console.WriteLine("Loading...");
                         Statistics.TimesPlayed++;
                         int Winner = 0;
+                        int playerOneScore = 0; int playerTwoScore = 0; // creating the scores for the players
                         Console.WriteLine("Loading complete!");
                         Console.WriteLine("Start game? [Y/N]");
                         string startGame = Console.ReadLine();
-                        while (startGame == "Y")
+                        while (startGame == "Y")                                                // Creating menu system using print, while loops and if statements
                         {
                             while (Winner == 0)
                             {
                                 int playerOneRoll = SevensOutPlayerOne.SevensPlayerOne();
-                                int playerTwoRoll = SevensOutPlayerTwo.SevensPlayerTwo();
+                                int playerTwoRoll = SevensOutPlayerTwo.SevensPlayerTwo(); // Creating roll objects
+                                playerOneScore = playerOneScore + playerOneRoll;
+                                playerTwoScore = playerTwoScore + playerTwoRoll; // Creating logic for the score
                                 if (playerOneRoll != 7 && playerTwoRoll != 7)
                                 {
                                     Console.WriteLine("Player One rolled..." + playerOneRoll);
-                                    Console.WriteLine("Computer rolled..." + playerTwoRoll);
+                                    Console.WriteLine("Computer rolled..." + playerTwoRoll);        // rolling the die
                                 }
                                 if (playerOneRoll == 7 && playerTwoRoll != 7)
                                 {
                                     Console.WriteLine("Player One rolled..." + playerOneRoll);
+                                    Console.WriteLine("Player One Score is: " + playerOneScore);
+                                    Console.WriteLine("Computer Score is: " + playerTwoScore);
                                     Statistics.PlayerOneWins++;
-                                    Winner = 1;
+                                    if (playerOneScore > playerTwoScore)
+                                    {
+                                        Winner = 1;
+                                    }
+                                    if(playerTwoScore > playerOneScore)
+                                    {
+                                        Winner = 2;                                             // checking for winners if either player rolls 7 using if statments
+                                    }
+                                    
                                 }
                                 if (playerOneRoll != 7 && playerTwoRoll == 7)
                                 {
                                     Console.WriteLine("Computer rolled..." + playerTwoRoll);
+                                    Console.WriteLine("Player One Score is: " + playerOneScore);
+                                    Console.WriteLine("Computer Score is: " + playerTwoScore);
                                     Statistics.ComputerWins++;
-                                    Winner = 2;
+                                    if (playerOneScore > playerTwoScore)
+                                    {
+                                        Winner = 1;
+                                    }
+                                    if (playerTwoScore > playerOneScore)
+                                    {
+                                        Winner = 2;
+                                    }
+                                    
                                 }
                                 if (playerOneRoll == 7 && playerTwoRoll == 7)
                                 {
@@ -64,7 +87,7 @@ namespace CMP1903_A2_2324
                                 }
 
                             }
-                            if (Winner == 1)
+                            if (Winner == 1)                                            // Using an integer value to determine the winner and if statements to display the correct messages. 
                             {
                                 Winner = 0;
                                 Console.WriteLine("Player One Wins!");
@@ -73,6 +96,8 @@ namespace CMP1903_A2_2324
                                 if (keepPlaying == "Y")
                                 {
                                     Console.WriteLine("Restarting. Enjoy!");
+                                    playerOneScore = 0;
+                                    playerTwoScore = 0;
                                     Winner = 0;
                                     startGame = "Y";
                                 }
@@ -91,7 +116,9 @@ namespace CMP1903_A2_2324
                                 string keepPlaying = Console.ReadLine();
                                 if (keepPlaying == "Y")
                                 {
-                                    Console.WriteLine("Restarting. Enjoy!");
+                                    Console.WriteLine("Restarting. Enjoy!");        // Gives the player the option to keep playing or return to menu
+                                    playerOneScore = 0;
+                                    playerTwoScore = 0;
                                     Winner = 0;
                                     startGame = "Y";
                                 }
@@ -113,6 +140,8 @@ namespace CMP1903_A2_2324
                                 if (keepPlaying == "Y")
                                 {
                                     Console.WriteLine("Restarting. Enjoy!");
+                                    playerOneScore = 0;
+                                    playerTwoScore = 0;
                                     Winner = 0;
                                     startGame = "Y";
                                 }
@@ -131,8 +160,8 @@ namespace CMP1903_A2_2324
                         Console.WriteLine("Loading...");
                         Statistics.TimesPlayed++;
                         int Winner = 0;
-                        int playerOneRoll = 0;
-                        int playerTwoRoll = 0;
+                        int playerOneScore = 0;
+                        int playerTwoScore = 0;
                         Console.WriteLine("Loading complete!");
                         Console.WriteLine("Start game? [Y/N]");
                         string startGame = Console.ReadLine();
@@ -140,11 +169,14 @@ namespace CMP1903_A2_2324
                         {
                             while (Winner == 0)
                             {
+                                int playerOneRoll = 0;
+                                int playerTwoRoll = 0;
                                 Console.WriteLine("Player One, press R to roll!");
                                 string playerOneInput = Console.ReadLine();
-                                if (playerOneInput == "R")
+                                if (playerOneInput == "R")                                  // Uses strings and if statements to add player interaction in the 2 player mode, otherwise, the gamemodes are identical.
                                 {
                                     playerOneRoll = SevensOutPlayerOne.SevensPlayerOne();
+                                    playerOneScore = playerOneScore + playerOneRoll;
                                 }
                                 if (playerOneInput != "R")
                                 {
@@ -156,6 +188,7 @@ namespace CMP1903_A2_2324
                                 if (playerTwoInput == "R")
                                 {
                                     playerTwoRoll = SevensOutPlayerTwo.SevensPlayerTwo();
+                                    playerTwoScore = playerTwoScore + playerTwoRoll;
                                 }
                                 if (playerTwoInput != "R")
                                 {
@@ -171,14 +204,30 @@ namespace CMP1903_A2_2324
                                 if (playerOneRoll == 7 && playerTwoRoll != 7)
                                 {
                                     Console.WriteLine("Player One rolled..." + playerOneRoll);
-                                    Statistics.PlayerOneWins++;
-                                    Winner = 1;
+                                    Console.WriteLine("Player One Score is: " + playerOneScore);
+                                    Console.WriteLine("Player Two Score is: " + playerTwoScore);
+                                    if (playerOneScore > playerTwoScore)
+                                    {
+                                        Statistics.PlayerOneWins++; Winner = 1;
+                                    }
+                                    if (playerTwoScore > playerOneScore)
+                                    {
+                                        Statistics.PlayerTwoWins++; Winner = 2;
+                                    }
                                 }
                                 if (playerOneRoll != 7 && playerTwoRoll == 7)
                                 {
                                     Console.WriteLine("Player Two rolled..." + playerTwoRoll);
-                                    Statistics.ComputerWins++;
-                                    Winner = 2;
+                                    Console.WriteLine("Player One Score is: " + playerOneScore);
+                                    Console.WriteLine("Player Two Score is: " + playerTwoScore);
+                                    if (playerOneScore > playerTwoScore)
+                                    {
+                                        Statistics.PlayerOneWins++; Winner = 1;
+                                    }
+                                    if (playerTwoScore > playerOneScore)
+                                    {
+                                        Statistics.PlayerTwoWins++; Winner = 2;
+                                    }
                                 }
                                 if (playerOneRoll == 7 && playerTwoRoll == 7)
                                 {
@@ -198,6 +247,8 @@ namespace CMP1903_A2_2324
                                 if (keepPlaying == "Y")
                                 {
                                     Console.WriteLine("Restarting. Enjoy!");
+                                    playerOneScore = 0;
+                                    playerTwoScore = 0;
                                     Winner = 0;
                                     startGame = "Y";
                                 }
@@ -217,6 +268,8 @@ namespace CMP1903_A2_2324
                                 if (keepPlaying == "Y")
                                 {
                                     Console.WriteLine("Restarting. Enjoy!");
+                                    playerOneScore = 0;
+                                    playerTwoScore = 0;
                                     Winner = 0;
                                     startGame = "Y";
                                 }
@@ -237,6 +290,8 @@ namespace CMP1903_A2_2324
                                 if (keepPlaying == "Y")
                                 {
                                     Console.WriteLine("Restarting. Enjoy!");
+                                    playerOneScore = 0;
+                                    playerTwoScore = 0;
                                     Winner = 0;
                                     startGame = "Y";
                                 }
@@ -257,12 +312,12 @@ namespace CMP1903_A2_2324
                     int GamePlayerOneWins = Statistics.PlayerOneWins;
                     int GameComputerWins = Statistics.ComputerWins;
                     int GamePlayerTwoWins = Statistics.PlayerTwoWins;
-                    int GameDraws = Statistics.Draws;
+                    int GameDraws = Statistics.Draws;                   // Uses the statistics values in integer variables to be displayed
                     Console.WriteLine("\n Times played: " + GameTimesPlayed);
                     Console.WriteLine("\n Player One wins: " + GamePlayerOneWins);
                     Console.WriteLine("\n Player Two wins: " + GamePlayerTwoWins);
                     Console.WriteLine("\n Computer wins: " + GameComputerWins);
-                    Console.WriteLine("\n Draws: " + GameDraws);
+                    Console.WriteLine("\n Draws: " + GameDraws);                    // Displays statistics
                     Console.WriteLine("\n Return to menu? [Y/N]");
                     string returnToMenu = Console.ReadLine();
                     if (returnToMenu == "Y")
@@ -287,12 +342,12 @@ namespace CMP1903_A2_2324
                     if (returnMenu!= "Y")
                     {
                         break;
-                    }
+                    }                                               // Testing class
 
                 }
                 if(PlayerResponse == "5")
                 {
-                    break;
+                    break;                      // for quitting graciously
                 }
             }
         }
